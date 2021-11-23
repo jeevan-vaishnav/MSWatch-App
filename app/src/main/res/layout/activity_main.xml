@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/id_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/txtColorWhite"
+        android:textSize="92sp"></TextView>
+
+    <Button
+        android:id="@+id/id_start_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="171dp"
+        android:onClick="onClickStart"
+        android:text="@string/start"></Button>
+
+    <Button
+        android:id="@+id/id_stop_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/id_start_btn"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="233dp"
+        android:onClick="onClickStop"
+        android:text="@string/stop">></Button>
+
+    <Button
+        android:id="@+id/id_reset_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/id_stop_btn"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="292dp"
+        android:onClick="onClickReset"
+        android:text="@string/reset">>
+    </Button>
+
+</RelativeLayout>
